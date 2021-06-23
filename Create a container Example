@@ -1,0 +1,21 @@
+docker image pull <repository>:<tag>    << This will pull the image 
+cd pswed                << Go to the directory that store the repository we just pull from the web
+ls                      << check to see for the Dockerfile 
+cat Dockerfile          << check for their components before build 
+docker image build -p <image ID or name> <tag>    << build our image using the Dockerfile, -p make it run in the background 
+docker image ls -a    <<check to see what image are running
+docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]    << create a new tag for the image to get ready to push it to the Docker Hub 
+docker push <hub-user>/<repo-name>:<tag>                 << push the newly created image to Docker Hub for storage and sharing
+docker container run -p <image ID>:<tag> << run container with the image ID in the background 
+docker stop <image ID>
+docker rm <image ID>
+docker container run -d --name <name> \ -p 80:8080 \ <image name>:<tag> << run the app
+#next is to use docker compose to manage multople microservices aka many containers all together
+#docker compose use the YAML file (docker-compose.yml) => this file is the glue that sticks all the application microservises together, it describes how Docker should build and deploy the app. 
+docker-compose --version 
+#docker compose should have Dockerfile used to build the image, and the docker-compose YAML file, plus the app.py for the application code, and the requirements.txt that list te Python packages required for the app.
+docker-compose up &  << this will run the app.py with Flask web framework, use Dockerfile to build image, use docker-compose to glue all applications files together and use requirenment.txt to run required libraries
+docker container ls << check the port for web browser 
+docker-compose down << take down 
+
+
