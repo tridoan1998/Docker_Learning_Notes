@@ -16,6 +16,23 @@ docker-compose --version
 #docker compose should have Dockerfile used to build the image, and the docker-compose YAML file, plus the app.py for the application code, and the requirements.txt that list te Python packages required for the app.
 docker-compose up &  << this will run the app.py with Flask web framework, use Dockerfile to build image, use docker-compose to glue all applications files together and use requirenment.txt to run required libraries
 docker container ls << check the port for web browser 
-docker-compose down << take down 
+docker-compose down << take down
+
+docker-compose run $ << make sure we have the docker-compose.yml file ready which contains version, services, volumn => a ton of them
+docker-compose down  << take down the compose 
+
+#next we will go over how to create an image of Apache and run a container, deploy it to the web
+git clone httpd .
+mkdir apache_demo 
+cd apache_demo
+vi Dockerfile 
+#cope the requirement in the Apache website to create the Dockerfile for Apache 
+docker image build -t apache_demo /bin/bash .
+docker container run -d apache_demo - p 8080:8080 /bin/bash
+docker ps  << show all the process are running, which also show the port they are running on
+
+
+
+
 
 
