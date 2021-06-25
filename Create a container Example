@@ -30,8 +30,10 @@ vi Dockerfile
 docker image build -t apache_demo /bin/bash .
 docker container run -d apache_demo - p 8080:8080 /bin/bash
 docker ps  << show all the process are running, which also show the port they are running on
-
-
+docker swarm init << create swarm and set the node as manager
+docker swarm join-token worker1 
+docker swarm join-token worker2
+docker swarm join-token manager2
 
 
 
