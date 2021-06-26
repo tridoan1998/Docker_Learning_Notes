@@ -1,1 +1,2 @@
 DNS: Domain Name System => is the domain name we type on the web browser, DNS translates domain names to IP addresses so browsers can load Internet resources.
+Structure of container: Physical Server, Operating System, Docket with containers that carry applications 
