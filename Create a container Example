@@ -35,6 +35,10 @@ docker swarm join-token worker1
 docker swarm join-token worker2
 docker swarm join-token manager2
 
+docker network create my-net  << create a network bridge for single host 
+docker container create --name my-nginx --network my-net --publish 8080:80 my-nginx:latest << create container 
+docket network connect my-net my-nginx << connect bridge network with the container 
+
 
 
 
