@@ -39,6 +39,12 @@ docker network create my-net  << create a network bridge for single host
 docker container create --name my-nginx --network my-net --publish 8080:80 my-nginx:latest << create container 
 docket network connect my-net my-nginx << connect bridge network with the container 
 
+#practice docke commands:
+docker run -it devopsdockeruh/pull_exercise .  << run the container and connect the container to the terminal, build it from the image in the current directory, using the name ID given 
+#Dockerfile is basically a file that contains everything it needed to build an image for the container. The format is: FROM <image used>, RUN <install the dependency>, WKDIR <the dicrectory the image will be build on>
+#each of these instruction will stack up one on top of another to build an image. This is why our image will have many layers. 
+
+
 
 
 
