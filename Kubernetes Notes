@@ -9,4 +9,10 @@ Steps of Deployment on Kubernetes: create the microservices, pack it into contai
 #practice commands to deploy Kubernetes:
 kubectl apply -f yamlfile.yml
 #in the YAML file, there will be dependencies and requirement to run the pod, this included the containers created inside the file.
+kubectl apply -f <yaml file name> << deployment our pod to the kubernetes cluster 
+#underand of the YAML file is nesscessary because our pod is built upon it.
+apiVerison, kind, metadata, spec
+Pod has IP address, single range of TCP and UDP ports, and a single routing table. 
+container: carry applications, app that are ready to deply, pods wrapper around container: sharing with networkds, ReplicaSet: scaling and self healing, deployment used to rollout and rollback.
+Pods let you co-locate, share volume, share memory, simplify network. 
 
