@@ -1,1 +1,12 @@
 Kubernetes used to deploy and maintain microservices. 
+Kubertenes is a node cluster.
+Controller: which has cluster stage and the desired stage.
+Scheduler:
+Manager:
+Microservies: small, autonomus software with work together. 
+Pods: wrap around containers, and Kubernetes cluster will be running these pods.
+Steps of Deployment on Kubernetes: create the microservices, pack it into container, pack those containers inside the pods, and then deploy it to the API server. 
+#practice commands to deploy Kubernetes:
+kubectl apply -f yamlfile.yml
+#in the YAML file, there will be dependencies and requirement to run the pod, this included the containers created inside the file.
+
