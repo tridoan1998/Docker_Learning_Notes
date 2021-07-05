@@ -40,6 +40,27 @@ sec:
         port: 80
         targetPort: 9376
 clusterIP: the IP that assign to your cluster. 
+What is microservices? Microservices are small, auto services that work together. 
+Review on Docker: 
+docker pull image from Docker Hub
+create a directory, cd to that directory. 
+create a Dockerfile with all dependencdies, when we build image, this Dockerfile will be compiled.
+Sample of Dockerfile for Docker: 
+FROM <iamge pull from Docker Hub>
+
+WORDIR <run all dependencies from this location> <... into this location>
+
+RUN <run all of these apps>
+
+docker build image -tag <image name> .
+docker container run -it or -d <image name> -p 8080:8080
+docker container ls -a 
+docker image ls 
+docker ps 
+
+
+
+
 
 
  
