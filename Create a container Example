@@ -43,6 +43,27 @@ docket network connect my-net my-nginx << connect bridge network with the contai
 docker run -it devopsdockeruh/pull_exercise .  << run the container and connect the container to the terminal, build it from the image in the current directory, using the name ID given 
 #Dockerfile is basically a file that contains everything it needed to build an image for the container. The format is: FROM <image used>, RUN <install the dependency>, WKDIR <the dicrectory the image will be build on>
 #each of these instruction will stack up one on top of another to build an image. This is why our image will have many layers. 
+git clone https..../linux_tweet_app.com
+cd ~/linux_tweet_app
+cat Dockerfile:
+FROM 
+WOKDIR
+RUN 
+git clone https://github.com/ibnesayeed/linkextractor.git
+cd linkextractor
+git checkout demo 
+git checkout step0 
+tree
+vi Dockerfile 
+FROM pyhton:3
+WOKDIR .
+RUN pip install beautifulsoup4
+RUN pip install requests
+COPY /user/linkextractor.py .
+RUN chmod a+x linkextractor.py 
+#get out of the Dockerfile, exist the file, saved it!
+docker image build -t linkextractor:step1 .
+docker container run -it --rm linkextractor:step1 bash 
 
 
 
