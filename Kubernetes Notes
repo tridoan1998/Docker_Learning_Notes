@@ -63,14 +63,10 @@ Step 0: create the configuration files aka the .YAML file
 Step 1: mkdir a directory to store two files, for example we using mongo to deply, we have two files named mongo.yaml and mongo-secret.yaml
 Problem faced: can not run the command in CLI: kubectl apply -f mongo-secret.yaml 
 error is: Error from server (InternalError): an error on the server ("") has prevented the request from succeeding
-
-
-
-
-
-
-
-
+solved it already. Set the project to test, and define a Virtual Cloud for the K8b to deploy.
+4 types of networking:
+1. Container to Container => Solved by Pods 
+2. 
 
  
       
