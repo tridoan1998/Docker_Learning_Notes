@@ -58,6 +58,15 @@ docker container ls -a
 docker image ls 
 docker ps 
 
+How to deploy the app to the Kubernetes:
+Step 0: create the configuration files aka the .YAML file 
+Step 1: mkdir a directory to store two files, for example we using mongo to deply, we have two files named mongo.yaml and mongo-secret.yaml
+Problem faced: can not run the command in CLI: kubectl apply -f mongo-secret.yaml 
+error is: Error from server (InternalError): an error on the server ("") has prevented the request from succeeding
+
+
+
+
 
 
 
