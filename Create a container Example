@@ -65,6 +65,10 @@ RUN chmod a+x linkextractor.py
 docker image build -t linkextractor:step1 .
 docker container run -it --rm linkextractor:step1 bash 
 
+#more practices:
+docker image built based upon Dockerfile, and Dockerfile is a list of instructions it gives to contruct the image.
+
+
 
 
 
