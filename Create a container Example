@@ -69,6 +69,21 @@ docker container run -it --rm linkextractor:step1 bash
 docker image built based upon Dockerfile, and Dockerfile is a list of instructions it gives to contruct the image.
 
 
-
+ 1071  docker build ubuntu
+ 1072  docker image build ubuntu
+ 1073  docker pull ubuntu
+ 1074  docker image build -t myimage2 ubuntu
+ 1075  docker image build -t myimage2 ubuntu:latest .
+ 1076  docker image build  ubuntu:latest .
+ 1077  clear
+ 1078  docker images
+ 1079  docker pull nginx
+ 1080  docker build test nginx
+ 1081  docker build test nginx .
+ 1082  docker build nginx
+ 1083  clear
+ 1084  docker pull ubuntu:latest
+ 1085  clear
+ 1086  command history
 
 
