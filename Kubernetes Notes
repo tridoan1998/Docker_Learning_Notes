@@ -68,9 +68,4 @@ solved it already. Set the project to test, and define a Virtual Cloud for the K
 1. Container to Container => Solved by Pods 
 2. 
 
- 
-      
-     
-      
-  
- 
+https://kubernetes.io/docs/tutorials/hello-minikube/
