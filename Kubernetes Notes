@@ -69,3 +69,12 @@ solved it already. Set the project to test, and define a Virtual Cloud for the K
 2. 
 
 https://kubernetes.io/docs/tutorials/hello-minikube/
+ 1483  docker build tridoan1998/myfirstapp
+ 1484  docker pull tridoan1998/myfirstapp
+ 1485  docker pull tridoan1998/myfirstapp
+ 1486  docker build .
+ 1487  cd ..
+ 1488  ls
+ 1489  docker container run -d -p 1010:1010 --name mycontainer tridoan1998/myfirstapp
+ 1490  docker ls -a
+ 1491  docker container ls -a
