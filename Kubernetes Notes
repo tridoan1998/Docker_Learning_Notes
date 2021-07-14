@@ -115,7 +115,22 @@ metadata:
       -   name: mywebserver 
           image: nginx:latest
  Difference between CMD and ENTRYPOINT. 
- 
+  2148  kubectl apply -f commands.yaml
+ 2149  kubectl get pods
+ 2150  kubectl exec -it command sh
+ 2151  kubectl exec -it command4 sh
+ 2152  docker run -d --name nginx nginx
+ 2153  docker ps
+ 2154  docker ps | head
+ 2155  clear
+ 2156  docker ps | head
+ 2157  docker inspect nginx
+ 2158  clear
+ 2159  docker run -d nginx2 -p 80:80nginx
+ 2160  docker run -d --name nginx2 -p 80:80 nginx
+ 2161  docker ps | head
+ 2162  docker images
+ 2163  docker images | egrep mykplabs
      
 
 
