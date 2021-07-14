@@ -78,3 +78,48 @@ https://kubernetes.io/docs/tutorials/hello-minikube/
  1489  docker container run -d -p 1010:1010 --name mycontainer tridoan1998/myfirstapp
  1490  docker ls -a
  1491  docker container ls -a
+ 
+ Note for Udemy class for CKAD certificate:
+Architecture of Kubernetes: Master node, and many worker nodes. We can have many master node, but only one can run active at a time. 
+docker ps | egrep <name of the container>
+docker start/stop <name of the container>
+Crete a K8s cluster => choose how many nodes you want to run.
+We can access our cluster using the CLI, with token and authencations, password.
+When we crete the cluster, we have the address of where the cluster is, and the authirecation to it.
+the command kubectl is the command tool line we used to run against the Kubernetes cluster
+High level workflow:
+in order to access the cluster, the CLI need two things: the DNS/IP of the cluster + authiencation 
+kubectl get nodes # show how many workers node 
+cd ~/.kube # get into the K8s directory files 
+kubectl --kubeconfig "config" get nodes 
+kubectl and minikube: kubectl help to deploy app, services on K8s and minikube is a single node running locally on the VM.
+what is inside the master node? => scheduler, controller, manager, etcd, API server. 
+minikue is a one node Kubernetes cluster.
+kubectl is a commmand line tool for K8s cluster
+API: kubectl proxy --port=8080
+PODS: docker run --name <name of docker container> <image name used to create container>
+kubectl run <name of docker container> --image=<name of image used>
+kubectl get pods 
+container inside a pod can share IP address and port space, and can communicate via localhost.
+Kubernetes Objecy is the record of intent 
+2 ways to configure a Kubernetes Object:
+First is to use the kubectl command 
+Secind is to use the YAML file.
+For example:
+apiversion: v1 
+kind: Pod 
+metadata: 
+  name: mykubernetes-pod 
+  spec:
+      container:
+      -   name: mywebserver 
+          image: nginx:latest
+ Difference between CMD and ENTRYPOINT. 
+ 
+     
+
+
+
+
+
+
