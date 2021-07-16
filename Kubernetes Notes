@@ -131,6 +131,22 @@ metadata:
  2161  docker ps | head
  2162  docker images
  2163  docker images | egrep mykplabs
+ 
+  1066  git clone https://github.com/docker/getting-started/tree/master/app
+ 1067  git clone https://github.com/docker/getting-started/
+ 1068  git clone https://github.com/docker/getting-started/tree/master/app
+ 1069  git clone https://github.com/docker/getting-started/tree/master/
+ 1070  git clone https://github.com/docker/getting-started/tree/
+ 1071  git clone https://github.com/docker/getting-started/app
+ 1072  git clone https://github.com/docker/getting-started/app/
+ 1073  docker push tridoan1998/getting-started:latest
+ 1074  docker push tridoan1998/getting-started
+ 1075  docker push getting-started
+ 1076  docker tag tridoan1998/getting-started
+ 1077  docker container ls | head
+ 1078  docker container ls -a | head
+ 1080  docker tag getting-started tridoan1998/getting-started
+ 1081  docker push tridoan1998/getting-started
      
 
 
