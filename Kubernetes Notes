@@ -147,7 +147,29 @@ metadata:
  1078  docker container ls -a | head
  1080  docker tag getting-started tridoan1998/getting-started
  1081  docker push tridoan1998/getting-started
-     
+  1184  kubectl get rs
+ 1185  kubectl get pods
+ 1186  kubectl get deployments
+ 1187  kubectl get rs
+ 1188  kubectl get pods
+ 1189  kubectl apply -f deployments.yaml
+ 1190  kubectl get rs
+ 1191  kubectl get rs
+ 1192  kubectl get rs
+ 1193  kubectl get rs
+ 1194  kubectl get deployments
+ 1195  kubectl describe deployment nginx-deployment
+ 1196  kubectl rollout history deployment.v1.apps/nginx-deployment
+ 1197  kubectl rollout history deployment.v1.app/nginx-deployment --revision 1
+ 1198  kubectl rollout history deployment.v1.apps/nginx-deployment --revision 1
+ 1199  kubectl rollout history deployment.v1.apps/nginx-deployment --revision 2
+ 
+ Note: crate deployment, do kubectl apply -f my-deployment.yaml
+  check for deployment, kubectl get deployments
+  check for replicaset, kubectl get rs 
+  check for pods, kubectl get pods 
+  check for rollout history, kubectl rollout history deployment.v1.apps/my-deployment
+  
 
 
 
