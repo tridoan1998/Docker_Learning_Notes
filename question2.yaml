@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx
+  name: kplabs-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  containers:
+    - image: nginx
+      container: nginx

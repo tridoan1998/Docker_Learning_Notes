@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kplabs-label
+  labels:
+    environment: production
+    app: wwebserver
+spec:
+  containers:
+    - image: nginx
+      name: nginx-container
