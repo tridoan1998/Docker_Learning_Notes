@@ -170,6 +170,9 @@ metadata:
   check for pods, kubectl get pods 
   check for rollout history, kubectl rollout history deployment.v1.apps/my-deployment
   
+  Learning about servives for Kubernetes!
+  
+  
 
 
 
