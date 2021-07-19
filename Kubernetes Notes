@@ -172,9 +172,13 @@ metadata:
   
   Learning about servives for Kubernetes!
   
-  
-
-
+Know how to create pod => pod.yaml 
+kubectl apply -f pod.yaml
+kubectl get pods 
+know how to create service for pods => getservice.yaml
+kubectl apply -f service.yaml
+know how to create endpoint =>getendpoint.yaml
+kubectl apply -f endpoint.yaml
 
 
 
