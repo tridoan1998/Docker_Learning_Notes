@@ -1,0 +1,19 @@
+docker version 
+docker images ls
+docker image pull ubuntu:latest
+docker image ls 
+
+docker container run -it mycontainer ubuntu:latest /bin/bash 
+
+docker container stop 
+docker container rm
+
+mkdir container_dic
+cd container_dic
+vi Dockerfile.yml 
+FROM ubutu:latest
+
+RUN 
+
+CMD
+
