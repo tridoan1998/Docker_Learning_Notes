@@ -1,0 +1,16 @@
+ 1000  ls -a 
+ 1001  nomad
+ 1002  docker version 
+ 1003  docker pull postgres
+ 1004  dockerd
+ 1005  dockerd
+ 1006  brew list
+ 1007  docker version
+ 1008  sudo systemctl start docker 
+ 1009  sudo systemctl daemon-reload
+ 1010  sudo systemctl enable docker
+ 1011  dockerd
+ 1012  docker container ls 
+ 1013  docker container ls -a 
+ 1014  docker 
+ 1015  docker run -d -p 80:80 docker/getting-started 
